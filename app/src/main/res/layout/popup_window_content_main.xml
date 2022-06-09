@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pwcm_cl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_body"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/pwcm_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pwcm_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/record" />
+
+        <Button
+            android:id="@+id/pwcm_bt"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="账单记录"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwcm_ll_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pwcm_img_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/about" />
+
+        <Button
+            android:id="@+id/pwcm_bt_two"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="关于"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

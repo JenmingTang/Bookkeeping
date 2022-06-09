@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pwc_ll"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/pwc_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="备注"
+        android:layout_weight="5"
+        android:textColorHint="@color/main_gray">
+    </EditText>
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwc_btn"
+        android:textStyle="bold"
+        android:text="确定"/>
+</LinearLayout>

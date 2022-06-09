@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mrvi_rlt_two"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mrvi_rlt"
+        android:foreground="@drawable/recycler_item_ripple"
+        android:clickable="true"
+        android:longClickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/mrvi_tv_fullDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/mrvi_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/other_red" />
+
+        <TextView
+            android:id="@+id/mrvi_tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mrvi_img"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mrvi_tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mrvi_tv_category"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/mrvi_img"
+            android:text=""
+            android:textColor="@color/main_gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mrvi_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mrvi_tv_dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mrvi_tv_money"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textColor="@color/main_gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/mrvi_v"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/mrvi_rlt"
+        android:background="@color/main_body" />
+</RelativeLayout>

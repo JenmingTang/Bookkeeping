@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vpi_rlt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vpi_rlt_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/vpi_img_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/other" />
+
+        <TextView
+            android:id="@+id/vpi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/vpi_img_two"
+            android:text="其他"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vpi_tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/vpi_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vpi_rlt_two"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/vpi_rlt_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vpi_kv"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/vpi_tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加备注"
+            android:textColor="@color/main_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vpi_tv_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="time"
+            android:textColor="@color/main_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/vpi_kv"
+        android:keyBackground="@color/main_body"
+        android:keyTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

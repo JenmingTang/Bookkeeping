@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_rlt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_rlt_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_head"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="我的记账本"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:onClick="mainSearch"
+            android:src="@mipmap/calendar" />
+    </RelativeLayout>
+
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_smart_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_rlt_two"
+        android:background="@color/main_body">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/main_nsv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/main_rlt_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_body"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/main_rlt_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/main_img_two"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:onClick="mainEye"
+                        android:src="@mipmap/yanjing" />
+
+                    <TextView
+                        android:id="@+id/main_tv_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本月支出"
+                        android:textColor="@color/main_gray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/main_tv_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/main_tv_two"
+                        android:layout_marginTop="5dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/main_tv_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/main_tv_three"
+                        android:layout_marginTop="5dp"
+                        android:text="本月收入 ￥"
+                        android:textColor="@color/main_gray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/main_tv_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/main_tv_four"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/main_tv_four"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_rlt_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_rlt_four"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/main_tv_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今日支出 ￥"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/main_tv_seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/main_tv_six"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/main_tv_six"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/main_tv_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/main_tv_seven"
+                        android:layout_marginTop="5dp"
+                        android:text="今日收入 ￥"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/main_tv_nine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/main_tv_eight"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/main_tv_eight"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/main_rccl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_rlt_five"
+                    android:background="@color/white" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_rlt_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/main_btn"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/main_btn_two"
+            android:background="@drawable/main_btn_shape"
+            android:gravity="center"
+            android:onClick="main_btn"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_btn_two"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/main_btn_shape"
+            android:gravity="center"
+            android:text="•••"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

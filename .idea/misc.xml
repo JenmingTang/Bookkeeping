@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/drawable/main_btn_shape.xml" value="0.14166666666666666" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/drawable/recycler_item_ripple.xml" value="0.14166666666666666" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/drawable/tang.xml" value="0.14166666666666666" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/activity_all_record.xml" value="0.14285714285714285" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/activity_main.xml" value="0.18857142857142858" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/activity_record.xml" value="0.18857142857142858" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/activity_view_pager.xml" value="0.18857142857142858" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/activity_view_pager_item.xml" value="0.12552083333333333" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/asdasdas.xml" value="0.1" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/asdasdasdasd.xml" value="0.14285714285714285" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/asdsad.xml" value="0.1" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/asdsadsa.xml" value="0.1" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/fragment_.xml" value="0.12552083333333333" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/grid_layout_item.xml" value="0.12552083333333333" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/grid_view_item.xml" value="0.12552083333333333" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/main_rccl_item.xml" value="0.1" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/main_recycler_view_item.xml" value="0.27291666666666664" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/main_recycler_view_item_not_remark.xml" value="0.27291666666666664" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/popup_window_content.xml" value="0.42857142857142855" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/popup_window_content_main.xml" value="0.5714285714285714" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/sadas.xml" value="0.12552083333333333" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/layout/view_pager_item.xml" value="0.3828571428571429" />
+        <entry key="..\:/datas/Bookkeeping/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14166666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
