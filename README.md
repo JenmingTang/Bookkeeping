@@ -3,6 +3,6 @@
 
 product：Bookkeeping/app/release/app-release.apk
 
-!()[./Screenshot.jpg]
-!()[./Screenshot - 2.jpg]
-!()[./Screenshot - 3.jpg]
+!()[https://github.com/JenmingTang/Bookkeeping/blob/main/Screenshot.jpg]
+!()[https://github.com/JenmingTang/Bookkeeping/blob/main/Screenshot%20-%202.jpg]
+!()[https://github.com/JenmingTang/Bookkeeping/blob/main/Screenshot%20-%203.jpg]
